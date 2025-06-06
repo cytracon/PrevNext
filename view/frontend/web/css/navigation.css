@@ -1,0 +1,31 @@
+.product-navigation {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: white 10px solid;
+    padding: 10px;
+}
+.nav-link {
+    line-height: 1;
+    color: #862633 !important;
+    text-decoration: none !important;
+}
+.nav-link:hover {
+    color: #404040 !important;
+    text-decoration: none !important;
+}
+.nav-link.prev .icon-arrow-left::before,
+.nav-link.next .icon-arrow-right::before {
+    font-family: 'luma-icons';
+    color: #862633;
+}
+.nav-link.prev .icon-arrow-left::before {
+    content: '\e617'; /* Luma-Icon für Pfeil links */
+}
+.nav-link.next .icon-arrow-right::before {
+    content: '\e608'; /* Luma-Icon für Pfeil rechts */
+}
+.nav-link:hover .icon-arrow-left::before,
+.nav-link:hover .icon-arrow-right::before {
+    color: #6b1f29; /* Dunklere Farbe beim Hover */
+    text-decoration: none;
+}

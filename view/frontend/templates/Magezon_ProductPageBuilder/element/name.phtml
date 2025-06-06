@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var \Cytracon\ProductPageBuilder\Block\Product\Element\Name $block
+ */
+$coreHelper  = $this->helper(\Cytracon\Core\Helper\Data::class);
+$element     = $this->getElement();
+$text        = $this->getProduct()->getName();
+$headingType = $element->getData('heading_type');
+?>
+
+
+<?= $this->getChildHtml('product.navigation') ?>
+
+<?php if ($text) { ?>
+<<?= $headingType ?> class="ppbd-product-name"><?= $coreHelper->filter($text) ?></<?= $headingType ?>>
+<?php } ?>

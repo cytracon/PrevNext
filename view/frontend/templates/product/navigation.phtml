@@ -1,0 +1,19 @@
+<?php
+/** @var \Cytracon\PrevNext\Block\ProductNavigation $block */
+$prevProduct = $block->getPreviousProduct();
+$nextProduct = $block->getNextProduct();
+?>
+
+<div class="product-navigation">
+    <?php if ($prevProduct): ?>
+        <a href="<?= $block->escapeUrl($prevProduct->getProductUrl()) ?>" class="nav-link prev">
+            <span class="icon-arrow-left"></span> <?= $block->escapeHtml($prevProduct->getName()) ?>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($nextProduct): ?>
+        <a href="<?= $block->escapeUrl($nextProduct->getProductUrl()) ?>" class="nav-link next">
+            <?= $block->escapeHtml($nextProduct->getName()) ?> <span class="icon-arrow-right"></span>
+        </a>
+    <?php endif; ?>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Cytracon_PrevNext::css/navigation.css" />
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Cytracon\PrevNext\Block\ProductNavigation" name="product.navigation" template="Cytracon_PrevNext::product/navigation.phtml" before="mgz.productpagebuilder" />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,17 @@
+{
+  "name": "cytracon/prevnext",
+  "description": "Magento PrevNext Plugin",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Cytracon\\PrevNext\\": ""
+    }
+  },
+  "require": {
+    "php": "^7.4 || ^8.0"
+  }
+}
